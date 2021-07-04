@@ -1,5 +1,4 @@
 
-
 #title{
     /*background-color:#232323 ;*/
     background-image: url('../images/beach4.jpg');
@@ -18,9 +17,29 @@ html {
 }
 
 body{
-  
-    background-color:#FAFAFA;
+    
+    /*background-color:#FAFAFA;*/
+    background-position: bottom;
+    animation: 4s linear 0s infinite bp;
+    background-image: url('../images/full-bloom.png');
     font-family: 'Montserrat', sans-serif;
+}
+@keyframes bp {
+  from {
+    background-position:  198px 0;
+  }
+  
+  to {
+    background-position:  0 198px;
+  }
+}
+
+.dash{
+  border-style: dotted none none;
+  border-width: 10px;
+  border-color: gray;
+  height: 0px;
+  width: 10%;
 }
 
 #heading{
@@ -89,7 +108,7 @@ body{
 #testimonials{
     padding: 5% 10%;
     text-align: center;
-    background-color: #3FC5F0;
+    background-color: #5EAAA8;
 
 }
 
@@ -101,7 +120,7 @@ body{
 
 #press{
     text-align: center;
-    background-color: #3FC5F0;
+    background-color: #5EAAA8;
 }
 .press-image{
     width: 200px;
@@ -355,8 +374,18 @@ ul{
   cursor: zoom-in;
   z-index:1;
 }
+/*Call to action */
+.CallTO{
+  background-color: #204051;
+  padding: 7% 10%;
+}
+.call-to-heading{
+  font-size: 3.2rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
 
-
+/* Footer */
 
 .container-fluid-footer {
      overflow: hidden;
